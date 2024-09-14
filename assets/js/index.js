@@ -88,6 +88,29 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    var new_scroll_position = 0;
+    var last_scroll_position;
+    var headerr = document.querySelector('.header');
+
+    window.addEventListener('scroll', function(e) {
+    last_scroll_position = window.scrollY;
+
+    // Scrolling down
+    if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+    // header.removeClass('slideDown').addClass('slideUp');
+    headerr.classList.remove("slideDown");
+    headerr.classList.add("slideUp");
+
+    // Scrolling up
+    } else if (new_scroll_position > last_scroll_position) {
+    // header.removeClass('slideUp').addClass('slideDown');
+    headerr.classList.remove("slideUp");
+    headerr.classList.add("slideDown");
+    }
+
+    new_scroll_position = last_scroll_position;
+    });
+
     const navbarToggler = document.querySelector('.navbar-toggler');
     const collapse = document.querySelector('.collapse');
     const header = document.querySelector('.header');
