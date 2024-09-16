@@ -265,6 +265,7 @@ body{
   .marquee-wrapper {
     display:  flex;
     white-space: nowrap;
+    overflow-x: hidden;
   }
   
   .marquee {
