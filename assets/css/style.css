@@ -20,6 +20,7 @@ body{
 }
 
 /* Colors */
+
 .bg-grey{
   background-color: #f4f4f4;
 }
@@ -38,6 +39,9 @@ body{
 }
 .mb-40{
   margin-bottom: 40px;
+}
+.mb-32{
+  margin-bottom: 32px;
 }
 .me-40{
   margin-right: 40px;
@@ -67,6 +71,9 @@ body{
 .gap-40{
   gap: 40px;
 }
+.gap-32{
+  gap: 32px;
+}
 /* buttons */
 .btn-1{
   background-color: #65e2ca!important;
@@ -77,8 +84,14 @@ body{
   background-color: #000!important;
   color: #fff!important;
 }
-
+.btn-3{
+  background-color: white!important;
+  color: black!important;
+}
 /* headings */
+.text-xs {
+  font-size: .625rem;
+}
 .text-xl {
   font-size: 1.375rem;
 }
@@ -230,6 +243,10 @@ body{
   transform: scale(1);
   transition: transform 0.4s ease;
 }
+/* .service-card-img{
+  transform: scale(1);
+  transition: transform 0.4s ease;
+} */
 /* On hover */
 .hover-btn:hover .hover-prev-btn {
   transform: scale(1); 
@@ -259,7 +276,62 @@ body{
   transform: scale(0.9);
   transition: transform 0.4s ease;
 }
+.scale-img-container{
+  overflow: hidden; 
+  cursor: pointer;
+}
+.scale-img{
+  transition: transform 0.4s ease;
+}
+.scale-img-container:hover .scale-img {
+  transform: scale(1.05); 
+}
 
+.header-hover-line{
+  position: relative;
+  text-decoration: none; 
+  color: black;
+  display: inline-block;
+  width: max-content; 
+  padding-bottom: 2px; 
+}
+.header-hover-line::after {
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 1px; 
+  background-color: black; 
+  bottom: 0; 
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.header-hover-line:hover::after {
+  width: 100%;
+}
+
+.footer-hover-line{
+  position: relative;
+  text-decoration: none; 
+  color: white;
+  display: inline-block;
+  width: max-content; 
+  padding-bottom: 2px; 
+}
+.footer-hover-line::after {
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 1px; 
+  background-color: white; 
+  bottom: 0; 
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.footer-hover-line:hover::after {
+  width: 100%;
+}
 /* marquee effect */
 
   .marquee-wrapper {
@@ -278,12 +350,6 @@ body{
     animation-iteration-count: infinite;
     animation-duration: 77s;
   }
-  
-  .marquee div {
-    /* display:  inline-block; */
-    white-space: nowrap;
-    padding-right: 3rem;
-  }
 
   @keyframes marquee {
     0% {
@@ -294,6 +360,28 @@ body{
     }
   }
 
+/* pricing toggle */
+
+.pricing-toggle{
+  background-color: #fff;
+  border-radius: 1.875rem;
+  display: flex;
+  padding: 4px;
+  gap: 4px;
+  /* flex-wrap: wrap; */
+}
+.pricing-toggle-link{
+  color: grey;
+  background-color: white;
+  border-radius: 1.875rem;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+.pricing-toggle-link.active {
+  background-color: black;
+  color: white;
+}
 /* Slider  */
 .slider-container {
   width: 100%;

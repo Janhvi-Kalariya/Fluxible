@@ -127,6 +127,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    
+        const monthlyToggle = document.getElementById('monthly-toggle');
+        const yearlyToggle = document.getElementById('yearly-toggle');
+        const monthlyCards = document.getElementById('monthly-cards');
+        const yearlyCards = document.getElementById('yearly-cards');
+    
+        monthlyToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Show monthly cards and hide yearly cards
+            monthlyCards.style.display = 'flex';
+            yearlyCards.style.display = 'none';
+    
+            // Toggle active class
+            monthlyToggle.classList.add('active');
+            yearlyToggle.classList.remove('active');
+        });
+    
+        yearlyToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Show yearly cards and hide monthly cards
+            yearlyCards.style.display = 'flex';
+            monthlyCards.style.display = 'none';
+    
+            // Toggle active class
+            yearlyToggle.classList.add('active');
+            monthlyToggle.classList.remove('active');
+        });
+    
+    
+
   // Function to initialize a slider
   function initSlider(sliderWrapperSelector, nextBtnSelector, dotsContainerSelector) {
       const sliderWrapper = document.querySelector(sliderWrapperSelector);
@@ -168,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize the sliders
   // For the Pricing section, the dots container is outside of the #pricingSlider
-  initSlider('#pricingSlider .slider-wrapper', '#nextBtnPricing', '.dots-container');
+//   initSlider('#pricingSlider .slider-wrapper', '#nextBtnPricing', '.dots-container');
   // For the Services section, the dots container is inside the #servicesSlider
   initSlider('#servicesSlider .slider-wrapper', '#nextBtnServices', '#servicesSlider .dots-container');
 });
