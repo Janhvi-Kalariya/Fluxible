@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var new_scroll_position = 0;
     var last_scroll_position;
-    var headerr = document.querySelector('.header');
+    var headerBar = document.querySelector('.header');
 
     window.addEventListener('scroll', function(e) {
     last_scroll_position = window.scrollY;
@@ -98,14 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Scrolling down
     if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
     // header.removeClass('slideDown').addClass('slideUp');
-    headerr.classList.remove("slideDown");
-    headerr.classList.add("slideUp");
+    headerBar.classList.remove("slideDown");
+    headerBar.classList.add("slideUp");
 
     // Scrolling up
     } else if (new_scroll_position > last_scroll_position) {
     // header.removeClass('slideUp').addClass('slideDown');
-    headerr.classList.remove("slideUp");
-    headerr.classList.add("slideDown");
+    headerBar.classList.remove("slideUp");
+    headerBar.classList.add("slideDown");
     }
 
     new_scroll_position = last_scroll_position;
@@ -127,38 +127,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    
-        const monthlyToggle = document.getElementById('monthly-toggle');
-        const yearlyToggle = document.getElementById('yearly-toggle');
-        const monthlyCards = document.getElementById('monthly-cards');
-        const yearlyCards = document.getElementById('yearly-cards');
-    
-        monthlyToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Show monthly cards and hide yearly cards
-            monthlyCards.style.display = 'flex';
-            yearlyCards.style.display = 'none';
-    
-            // Toggle active class
-            monthlyToggle.classList.add('active');
-            yearlyToggle.classList.remove('active');
-        });
-    
-        yearlyToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Show yearly cards and hide monthly cards
-            yearlyCards.style.display = 'flex';
-            monthlyCards.style.display = 'none';
-    
-            // Toggle active class
-            yearlyToggle.classList.add('active');
-            monthlyToggle.classList.remove('active');
-        });
-    
+    const monthlyToggle = document.getElementById('monthly-toggle');
+    const yearlyToggle = document.getElementById('yearly-toggle');
+    const monthlyCards = document.getElementById('monthly-cards');
+    const yearlyCards = document.getElementById('yearly-cards');
+
+    // Initially ensure that monthly cards are visible, yearly are hidden
+    yearlyCards.classList.add('hide');
+    monthlyCards.classList.remove('hide');
+
+    monthlyToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    // Show monthly cards and hide yearly cards
+    monthlyCards.classList.remove('hide');
+    yearlyCards.classList.add('hide');
+
+    // Toggle active class for buttons
+    monthlyToggle.classList.add('active');
+    yearlyToggle.classList.remove('active');
+    });
+
+    yearlyToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    // Show yearly cards and hide monthly cards
+    yearlyCards.classList.remove('hide');
+    monthlyCards.classList.add('hide');
+
+    // Toggle active class for buttons
+    yearlyToggle.classList.add('active');
+    monthlyToggle.classList.remove('active');
+    });
+
     
 
-  // Function to initialize a slider
-  function initSlider(sliderWrapperSelector, nextBtnSelector, dotsContainerSelector) {
+    // Function to initialize a slider
+    function initSlider(sliderWrapperSelector, nextBtnSelector, dotsContainerSelector) {
       const sliderWrapper = document.querySelector(sliderWrapperSelector);
       const nextBtn = document.querySelector(nextBtnSelector);
       const dots = document.querySelectorAll(`${dotsContainerSelector} .dot`);
@@ -198,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize the sliders
   // For the Pricing section, the dots container is outside of the #pricingSlider
-//   initSlider('#pricingSlider .slider-wrapper', '#nextBtnPricing', '.dots-container');
+  // initSlider('#pricingSlider .slider-wrapper', '#nextBtnPricing', '.dots-container');
   // For the Services section, the dots container is inside the #servicesSlider
   initSlider('#servicesSlider .slider-wrapper', '#nextBtnServices', '#servicesSlider .dots-container');
 });
