@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: 'DejaVuSans'; 
@@ -20,7 +20,6 @@ body{
 }
 
 /* Colors */
-
 .bg-grey{
   background-color: #f4f4f4;
 }
@@ -30,6 +29,7 @@ body{
 .text-clr-main{
   color: #65e2ca;
 }
+
 /* spacing */
 .mx-80{
   margin: 0px 80px 0px 80px;
@@ -67,13 +67,13 @@ body{
 .pl-8{
   padding-left: 8.33333%;
 }
-
 .gap-40{
   gap: 40px;
 }
 .gap-32{
   gap: 32px;
 }
+
 /* buttons */
 .btn-1{
   background-color: #65e2ca!important;
@@ -88,6 +88,7 @@ body{
   background-color: white!important;
   color: black!important;
 }
+
 /* headings */
 .text-xs {
   font-size: .625rem;
@@ -164,18 +165,12 @@ body{
   position: absolute;
   top: 11%; 
   left: 21%; 
-  width: 53%; 
+  width: 54%; 
   height: 83%; 
   object-fit: cover; 
   border-radius: 12px;
 }
 
-.card-border-top{
-  border-top: 6px solid black;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
-}
 .cta-div{
   margin-bottom: -9rem;
   position: relative;
@@ -220,7 +215,7 @@ body{
   transition: margin-left 0.4s ease, margin-right 0.4s ease;
 }
 
-/* Initial state: Hide prev button, show next button */
+/* Initial state */
 .hover-prev-btn {
   transform: scale(0); 
   opacity: 0; 
@@ -253,10 +248,7 @@ body{
   transform: scale(1);
   transition: transform 0.4s ease;
 }
-/* .service-card-img{
-  transform: scale(1);
-  transition: transform 0.4s ease;
-} */
+
 /* On hover */
 .hover-btn:hover .hover-prev-btn {
   transform: scale(1); 
@@ -342,8 +334,8 @@ body{
 .footer-hover-line:hover::after {
   width: 100%;
 }
-/* marquee effect */
 
+/* marquee effect */
   .marquee-wrapper {
     display:  flex;
     white-space: nowrap;
@@ -380,7 +372,6 @@ body{
   display: flex;
   padding: 4px;
   gap: 4px;
-  /* flex-wrap: wrap; */
 }
 .pricing-toggle-link{
   color: grey;
@@ -394,11 +385,11 @@ body{
   background-color: black;
   color: white;
 }
+
 /* Slider  */
 .slider-container {
   width: 100%;
   overflow: hidden;
-  /* position: relative; */
 }
 
 .slider-wrapper {
@@ -410,8 +401,6 @@ body{
 .slider-card {
   min-width: calc(33.33% - 20px);
   box-sizing: border-box;
-  /* padding: 32px; */
-  /* margin: 0 20px; */
   border-radius: 8px;
 }
 
@@ -436,11 +425,6 @@ body{
   border-radius: 12px;
 }
 
-/* #pricingSlider .carousel-controls{
-  position: absolute;
-  right: -0.5rem;
-  bottom: 40%;
-} */
 #servicesSlider .carousel-controls{
   position: absolute;
   right: -1.5rem;
@@ -505,6 +489,7 @@ body{
     border-radius: 8px;
   }
 }
+
 /* Mobile Responsive */
 @media (max-width: 599.98px) { 
   .gap-40{
