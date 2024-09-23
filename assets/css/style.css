@@ -104,6 +104,9 @@ body{
 .text-4xl{
   font-size: 2.813rem;
 }
+.text-5xl {
+  font-size: 3.438rem;
+}
 .text-6xl{
   font-size: 4.063rem;
 }
@@ -204,7 +207,21 @@ body{
 .footer-input::placeholder{
   color: #969696!important;
 }
-
+.contact-arrow-icon{
+  position: absolute;
+  right: -20px;
+  top: -25px;
+}
+.form-check-input:checked{
+  background-color: #65e2ca!important;
+  border: 0;
+}
+.form-check-input:focus, .label::after, label.form-check-label:focus, .form-check-input::after, .form-check-input:not(:disabled):not(.disabled):active:focus {
+  color: black;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 0 0 0.1rem #65e2ca !important;
+}
 /* Hover effects */
 
 .hover-prev-btn, 
