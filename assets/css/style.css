@@ -29,7 +29,9 @@ body{
 .text-clr-main{
   color: #65e2ca;
 }
-
+.text-grey{
+  color: #999;
+}
 /* spacing */
 .mx-80{
   margin: 0px 80px 0px 80px;
@@ -466,6 +468,9 @@ body{
   .mb-lg-24{
     margin-bottom: 24px;
   }
+  .mb-lg-40{
+    margin-bottom: 40px;
+  }
   .cta-div{
     margin-bottom: -7rem;
     position: relative;
@@ -507,8 +512,14 @@ body{
   .py-sm-48{
     padding: 48px 0px 48px 0px;
   }
+  .p-sm-32{
+    padding: 32px;
+  }
   .mx-sm-24{
     margin: 0px 24px 0px 24px;
+  }
+  .mb-sm-40{
+    margin-bottom: 40px;
   }
   .text-sm-xl{
     font-size: 1.375rem;
