@@ -110,12 +110,12 @@ document.addEventListener('DOMContentLoaded', () => {
               updateActiveDot(activeIndex);
           }, { once: true });
       });
-  }
+    }
 
-  // Initialize the sliders
+    // Initialize the sliders
   
-  // initSlider('#pricingSlider .slider-wrapper', '#nextBtnPricing', '.dots-container');
-  initSlider('#servicesSlider .slider-wrapper', '#nextBtnServices', '#servicesSlider .dots-container');
+    // initSlider('#pricingSlider .slider-wrapper', '#nextBtnPricing', '.dots-container');
+    initSlider('#servicesSlider .slider-wrapper', '#nextBtnServices', '#servicesSlider .dots-container');
 });
 
 

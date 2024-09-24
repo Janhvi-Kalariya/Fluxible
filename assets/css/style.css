@@ -90,7 +90,6 @@ body{
   background-color: white!important;
   color: black!important;
 }
-
 /* headings */
 .text-xs {
   font-size: .625rem;
@@ -222,6 +221,17 @@ body{
   border: 0;
   box-shadow: 0 0 0 0.1rem #65e2ca !important;
 }
+
+.contact-form-icon{
+  position: absolute;
+  top: 34%;
+  left: 23px;
+}
+.contact-textarea-icon{
+  position: absolute;
+  top: 19%;
+  left: 23px;
+}
 /* Hover effects */
 
 .hover-prev-btn, 
@@ -267,7 +277,12 @@ body{
   transform: scale(1);
   transition: transform 0.4s ease;
 }
-
+.about-slider-btn{
+  background-color: transparent;
+  fill: black;
+  height: 54px;
+  width: 54px;
+}
 /* On hover */
 .hover-btn:hover .hover-prev-btn {
   transform: scale(1); 
@@ -297,6 +312,13 @@ body{
   transform: scale(0.9);
   transition: transform 0.4s ease;
 }
+.about-slider-btn:hover{
+  background-color: #000;
+  fill: white;
+  height: 54px;
+  width: 54px;
+}
+
 .scale-img-container{
   overflow: hidden; 
   cursor: pointer;
@@ -427,7 +449,10 @@ body{
   display: flex;
   justify-content: center;
 }
-
+.about-dots-container{
+  display: flex;
+  justify-content: center;
+}
 .dot {
   height: 10px;
   width: 10px;
@@ -437,8 +462,21 @@ body{
   display: inline-block;
   transition: width 0.3s ease, background-color 0.3s ease;
 }
-
+.about-dot{
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
 .dot.active {
+  background-color: #65e2ca;
+  width: 20px; 
+  border-radius: 12px;
+}
+.about-dot.active{
   background-color: #65e2ca;
   width: 20px; 
   border-radius: 12px;
@@ -472,6 +510,9 @@ body{
   }
   .py-lg-64{
     padding: 64px 0px 64px 0px;
+  }
+  .p-lg-32{
+    padding: 32px;
   }
   .pr-8{
     padding-right: 2.5rem;

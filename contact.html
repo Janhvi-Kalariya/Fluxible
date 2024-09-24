@@ -80,73 +80,161 @@
             </header>
         </section>
         <section class="py-96 py-lg-64 py-sm-48 mx-80 mx-lg-40 mx-sm-24 pt-4">
-            <div class="row mt-130">
+            <div class="row mt-130 gap-5 gap-lg-0">
                 <div class="col-12 col-lg-6">
-                    <div>
-                        <div class="mb-40 position-relative d-inline-block">
-                            <p class="font-1">Get in touch</p>
-                            <h1 class="font-2 fw-bold text-black text-5xl text-lg-3xl text-sm-2xl">Connect, Create,<br><span class="text-clr-main">Conquer Together</span></h1>
-                            <img src="assets/images/contact-arrow.svg" alt="icon" class="contact-arrow-icon"/>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <div class="mb-40 position-relative d-inline-block">
+                                <p class="font-1">Get in touch</p>
+                                <h1 class="font-2 fw-bold text-black text-5xl text-lg-3xl text-sm-2xl">Connect, Create,<br><span class="text-clr-main">Conquer Together</span></h1>
+                                <img src="assets/images/contact-arrow.svg" alt="icon" class="contact-arrow-icon"/>
+                            </div>
+                            <div class="font-1">
+                                <div class="mb-32">
+                                    <h5 class="fw-bold">Questions? We've Got Answers!</h5>
+                                    <p>Reach out for any info or support you need.</p>
+                                </div>
+                                <div class="mb-32">
+                                    <h5 class="fw-bold">Tailored Solutions</h5>
+                                    <p>Let's craft a custom plan perfect for your brand.</p>
+                                </div>
+                                <p>UK - <span><a href="#" class="text-clr-main">hello@fluxible.com</a></span></p>
+                                <p>North America - <span><a href="#" class="text-clr-main">hi@fluxible.com</a></span></p>
+                            </div>
                         </div>
-                        <div class="font-1">
-                            <div class="mb-32">
-                                <h5 class="fw-bold">Questions? We've Got Answers!</h5>
-                                <p>Reach out for any info or support you need.</p>
+                        <div class="hero-social-div d-block d-lg-none ps-3">
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/facebook-icon-dark.svg" class="social-icon" alt="facebook-icon"/></a>
                             </div>
-                            <div class="mb-32">
-                                <h5 class="fw-bold">Tailored Solutions</h5>
-                                <p>Let's craft a custom plan perfect for your brand.</p>
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/linkedin-icon-dark.svg" class="social-icon" alt="linkedin-icon"/></a>
                             </div>
-                            <p>UK - <span><a href="#" class="text-clr-main">hello@fluxible.com</a></span></p>
-                            <p>North America - <span><a href="#" class="text-clr-main">hi@fluxible.com</a></span></p>
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/instagram-icon-dark.svg" class="social-icon" alt="instagram-icon"/></a>
+                            </div>
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/youtube-icon-dark.svg" class="social-icon" alt="youtube-icon"/></a>
+                            </div>
+                            <!-- <div class="mb-1">
+                                <a href="#"><img src="assets/images/tiktok-icon-dark.svg" class="social-icon" alt="tiktok-icon"/></a>
+                            </div> -->
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/spotify-icon-dark.svg" class="social-icon" alt="spotify-icon"/></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="bg-grey rounded-4 p-32 p-sm-24">
-                        <form class="row g-3">
-                            <div class="col-md-6">
-                              <!-- <label for="name" class="form-label">Name</label> -->
-                              <input type="text" class="form-control rounded-5 bg-white text-black py-3 px-4 border-0" id="name" placeholder="Name *">
-                            </div>
-                            <div class="col-md-6">
-                              <input type="text" class="form-control rounded-5 bg-white text-black py-3 px-4 border-0" id="phone" placeholder="Phone *">
-                            </div>
-                            <div class="col-12">
-                              
-                              <input type="email" class="form-control rounded-5 bg-white text-black py-3 px-4 border-0" id="email" placeholder="Email Address *">
-                            </div>
-                            <div class="col-12">
-                                <label for="source" class="form-label">How did you hear about us?</label>
-                                <select id="source" class="form-select rounded-5 bg-white text-black py-3 px-4 border-0">
-                                  <option selected>Choose a reason</option>
-                                  <option>LinkedIn</option>
-                                  <option>Search</option>
-                                  <option>Instagram</option>
-                                  <option>Facebook</option>
-                                  <option>Referral/Word of Mouth</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label for="help" class="form-label">How can we help?</label>
-                                <textarea class="form-control rounded-5 bg-white text-black py-3 px-4 border-0" id="help" rows="3" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Do you want to be added to our weekly social insights newsletter?
-                                </label>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <button type="submit" class="btn btn-2 rounded-5 py-2 px-4 font-1">Send Message</button>
-                            </div>
+                    <div class="d-flex align-items-center gap-5">
+                        <div class="bg-grey rounded-4 p-sm-24 p-lg-32 p-64">
+                            <form class="row g-3 contact-form">
+                                <div class="col-md-6">
+                                    <!-- <label for="name" class="form-label">Name</label> -->
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control rounded-5 bg-white text-black py-3 px-5 border-0" id="name" placeholder="Name *">
+                                        <img src="assets/images/contact-name-icon.svg" alt="icon" class="contact-form-icon"/>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control rounded-5 bg-white text-black py-3 px-5 border-0" id="phone" placeholder="Phone *">
+                                        <img src="assets/images/contact-phone-icon.svg" alt="icon" class="contact-form-icon"/>
+                                    </div>
+                                </div>
+                                <div class="col-12">  
+                                    <div class="position-relative">                        
+                                        <input type="email" class="form-control rounded-5 bg-white text-black py-3 px-5 border-0" id="email" placeholder="Email Address *">
+                                        <img src="assets/images/contact-email-icon.svg" alt="icon" class="contact-form-icon"/>
+                                    </div> 
+                                </div>
+                                <div class="col-12">
+                                    <label for="source" class="form-label">How did you hear about us?</label>
+                                    <div class="position-relative">
+                                        <select id="source" class="form-select rounded-5 bg-white text-black py-3 px-5 border-0">
+                                            <option selected>Choose a reason</option>
+                                            <option>LinkedIn</option>
+                                            <option>Search</option>
+                                            <option>Instagram</option>
+                                            <option>Facebook</option>
+                                            <option>Referral/Word of Mouth</option>
+                                        </select>
+                                        <img src="assets/images/contact-source-icon.svg" alt="icon" class="contact-form-icon"/>
+                                    </div>     
+                                </div>
+                                <div class="col-12">
+                                    <label for="help" class="form-label">How can we help?</label>
+                                    <div class="position-relative">
+                                        <textarea class="form-control rounded-5 bg-white text-black py-3 px-5 border-0" id="help" rows="3" placeholder="Message"></textarea>
+                                        <img src="assets/images/contact-help-icon.svg" alt="icon" class="contact-textarea-icon"/>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                        Do you want to be added to our weekly social insights newsletter?
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                <button type="submit" class="btn btn-2 rounded-5 py-2 px-4 font-1">Send Message</button>
+                                </div>
                           </form>
+                        </div>
+                        <div class="hero-social-div d-none d-lg-block">
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/facebook-icon-dark.svg" class="social-icon" alt="facebook-icon"/></a>
+                            </div>
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/linkedin-icon-dark.svg" class="social-icon" alt="linkedin-icon"/></a>
+                            </div>
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/instagram-icon-dark.svg" class="social-icon" alt="instagram-icon"/></a>
+                            </div>
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/youtube-icon-dark.svg" class="social-icon" alt="youtube-icon"/></a>
+                            </div>
+                            <!-- <div class="mb-1">
+                                <a href="#"><img src="assets/images/tiktok-icon-dark.svg" class="social-icon" alt="tiktok-icon"/></a>
+                            </div> -->
+                            <div class="mb-1">
+                                <a href="#"><img src="assets/images/spotify-icon-dark.svg" class="social-icon" alt="spotify-icon"/></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="mx-80 mx-lg-40 mx-sm-24 mb-5">
+            <div class="bg-main rounded-4 cta-div">
+                <div class="row gx-0">
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-end">
+                        <div class="cta-div-p--left">
+                            <h1 class="fw-bold font-2 text-4xl text-lg-3xl text-sm-2xl mb-4">Speak to a <span class="text-white">Fluxer</span></h1>
+                            <div>
+                                <a href="#" class="d-inline-flex hover-btn" style="text-decoration: none;">
+                                    <div class="hover-prev-btn">
+                                        <img src="assets/images/next-arrow-btn-black.svg" alt="next-btn"/>
+                                    </div>
+                                    <div class="hover-main-btn">
+                                        <button class="btn btn-2 rounded-5 py-2 px-4 font-1">Let's Chat</button>
+                                    </div>
+                                    <div class="hover-next-btn">
+                                        <img src="assets/images/next-arrow-btn-black.svg" alt="next-btn"/>
+                                    </div>   
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="cta-img-container">
+                            <img src="assets/images/cta-img-right.webp" alt="img" class="img-fluid cta-div-img--right"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section>
             <footer class="bg-black text-white font-1">
                 <div class="py-96 py-lg-64 py-sm-48 pb-0 mx-80 mx-lg-40 mx-sm-24">

@@ -102,7 +102,7 @@
                 </div>
                 <div class="col-12 col-lg-6 d-flex">
                     <div class="row gap-4 gap-lg-0">
-                        <div class="col-12 col-lg-6 flex-grow-1">
+                        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                             <div class="mb-4">
                                 <img src="assets/images/about-hero-1.png" class="rounded-5 img-fluid" alt="img"/>
                             </div>
@@ -115,7 +115,7 @@
                                 </div>
                             </div>    
                         </div>
-                        <div class="col-12 col-lg-6 flex-grow-1">
+                        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                             <div class="row">
                                 <div class="col-6">
                                     <img src="assets/images/about-hero-4.png" class="rounded-5 img-fluid" alt="img" />
@@ -152,7 +152,7 @@
                     </div>
                 </div>
                 <div class="row d-flex align-items-center">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 order-2 order-md-1">
                         <div>
                             <h2 class="font-2 fw-bold text-4xl text-lg-3xl text-sm-2xl mb-40 mb-lg-24 mb-sm-24">Empowered by innovation</h2>
                             <p class="font-1 mb-40 mb-lg-24 mb-sm-24">To revolutionize branding for small businesses through technology-driven services that empower and elevate entrepreneurial aspirations. We aim to make professional branding accessible and affordable, helping businesses to connect, create, and conquer with ease.</p>
@@ -160,8 +160,8 @@
                             <p class="font-1 mb-40 mb-lg-24 mb-sm-24">We see a future where every small business has the tools and support needed to shine and thrive in a competitive market.</p>
                         </div>
                     </div>
-                    <div class="col pl-8">
-                        <div class="mt-4 mt-md-0">
+                    <div class="col pl-8 order-1 order-md-2">
+                        <div class="mb-4 mb-md-0">
                             <img src="https://cdn2.assets-servd.host/ragged-gonolek/production/images/Social-Media-Awards.svg?dm=1701771884" alt="img" class="img-fluid rounded-5"/>
                         </div>
                     </div>
@@ -174,77 +174,101 @@
                     <div>
                         <h2 class="fw-bold text-4xl text-lg-3xl text-sm-2xl font-2 mb-0">What we believe in</h2>
                     </div>
-                    <div>
-                        <a href="#" class="d-flex hover-btn" style="text-decoration: none;">
-                            <div class="hover-prev-btn">
-                                <img src="assets/images/next-arrow-btn-black.svg" alt="next-btn"/>
-                            </div>
-                            <div class="hover-main-btn">
-                                <button class="btn btn-2 rounded-5 py-2 px-4 font-1">View All Services</button>
-                            </div>
-                            <div class="hover-next-btn">
-                                <img src="assets/images/next-arrow-btn-black.svg" alt="next-btn"/>
-                            </div>   
-                        </a>
+                    <div class="d-flex align-items-center gap-5 gap-md-4">
+                        <div class="about-dots-container">
+                            <span class="about-dot" data-slide="1"></span>
+                            <span class="about-dot" data-slide="2"></span>
+                            <span class="about-dot" data-slide="3"></span>
+                            <span class="about-dot" data-slide="4"></span>
+                            <span class="about-dot" data-slide="5"></span>
+                            <span class="about-dot" data-slide="6"></span>
+                        </div>
+                        <div>
+                            <button id="prevBtnAbout" class="btn btn-outline-dark rounded-5 p-0 about-slider-btn">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_166_250)">
+                                    <path d="M0.529688 6.52968L0 5.99999L0.529688 5.4703L3.52969 2.4703L4.05938 1.94061L5.12109 2.99999L4.59141 3.52968L2.87109 5.24999H11.25H12V6.74999H11.25H2.87109L4.59141 8.4703L5.12109 8.99999L4.05938 10.0617L3.52969 9.53202L0.529688 6.53202V6.52968Z" fill=""/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_166_250">
+                                    <rect width="12" height="12" fill=""/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                              
+                            </button>
+                            <button id="nextBtnAbout" class="btn btn-outline-dark rounded-5 p-0 about-slider-btn">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_70_190)">
+                                    <path d="M11.4703 5.47032L12 6.00001L11.4703 6.5297L8.47031 9.5297L7.94062 10.0594L6.87891 9.00001L7.40859 8.47032L9.12891 6.75001H0.75H0V5.25001H0.75H9.12891L7.40859 3.5297L6.87891 3.00001L7.94062 1.93829L8.47031 2.46798L11.4703 5.46798V5.47032Z" fill=""/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_70_190">
+                                    <rect width="12" height="12" fill=""/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>            
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="" >
                 
-                    <div class="overflow-hidden">
+                    <div class="slider-container" id="aboutSlider">
                         <div class="slider-wrapper font-1">
                                    
-                            <div class="card border-0 rounded-4 slider-card bg-main p-32" style="width: 21rem;">
+                            <div class="card border-0 rounded-4 slider-card bg-black p-32">
                                 <div class="mb-80 mb-sm-40 mb-lg-40 rounded-4">
                                   <img src="assets/images/bulb-icon.svg" alt="icon" height="56px"/>  
                                 </div>                       
-                                <div class="card-body p-0">
-                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold">Integrity</h5>
-                                  <p class="card-text">Integrity is at the core of everything we do, ensuring trust and transparency with our clients.</p>
+                                <div class="card-body p-0 d-flex flex-column justify-content-end">
+                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold text-white">Integrity</h5>
+                                  <p class="card-text text-white">Integrity is at the core of everything we do, ensuring trust and transparency with our clients.</p>
                                 </div>
                             </div>
-                            <div class="card border-0 rounded-4 slider-card bg-main p-32" style="width: 21rem;">
+                            <div class="card border-0 rounded-4 slider-card bg-main p-32">
                                 <div class="mb-80 mb-sm-40 mb-lg-40 rounded-4">
                                   <img src="assets/images/bulb-icon.svg" alt="icon" height="56px"/>  
                                 </div>                       
-                                <div class="card-body p-0">
-                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold">Customer-Centricity</h5>
-                                  <p class="card-text">Our focus is always on our customers, tailoring our services to meet your unique needs and goals.</p>
+                                <div class="card-body p-0 d-flex flex-column justify-content-end">
+                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold text-black">Customer-Centricity</h5>
+                                  <p class="card-text text-black">Our focus is always on our customers, tailoring our services to meet your unique needs and goals.</p>
                                 </div>
                             </div>
-                            <div class="card border-0 rounded-4 slider-card bg-main p-32" style="width: 21rem;">
+                            <div class="card border-0 rounded-4 slider-card bg-grey p-32">
                                 <div class="mb-80 mb-sm-40 mb-lg-40 rounded-4">
                                   <img src="assets/images/bulb-icon.svg" alt="icon" height="56px"/>  
                                 </div>                       
-                                <div class="card-body p-0">
-                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold">Efficiency</h5>
-                                  <p class="card-text">We prioritize efficiency to deliver fast, high-quality results that save you time and resources.</p>
+                                <div class="card-body p-0 d-flex flex-column justify-content-end">
+                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold text-black">Efficiency</h5>
+                                  <p class="card-text text-black">We prioritize efficiency to deliver fast, high-quality results that save you time and resources.</p>
                                 </div>
                             </div>
-                            <div class="card border-0 rounded-4 slider-card bg-main p-32" style="width: 21rem;">
+                            <div class="card border-0 rounded-4 slider-card bg-black p-32">
                                 <div class="mb-80 mb-sm-40 mb-lg-40 rounded-4">
                                   <img src="assets/images/bulb-icon.svg" alt="icon" height="56px"/>  
                                 </div>                       
-                                <div class="card-body p-0">
-                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold">Quality</h5>
-                                  <p class="card-text">We commit to delivering top-tier quality in all our services, exceeding your expectations every time.</p>
+                                <div class="card-body p-0 d-flex flex-column justify-content-end">
+                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold text-white">Quality</h5>
+                                  <p class="card-text text-white">We commit to delivering top-tier quality in all our services, exceeding your expectations every time.</p>
                                 </div>
                             </div>
-                            <div class="card border-0 rounded-4 slider-card bg-main p-32" style="width: 21rem;">
+                            <div class="card border-0 rounded-4 slider-card bg-main p-32">
                                 <div class="mb-80 mb-sm-40 mb-lg-40 rounded-4">
                                   <img src="assets/images/bulb-icon.svg" alt="icon" height="56px"/>  
                                 </div>                       
-                                <div class="card-body p-0">
-                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold">Empower</h5>
-                                  <p class="card-text">Empowering small businesses to achieve their dreams through accessible and affordable branding solutions.</p>
+                                <div class="card-body p-0 d-flex flex-column justify-content-end">
+                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold text-black">Empower</h5>
+                                  <p class="card-text text-black">Empowering small businesses to achieve their dreams through accessible and affordable branding solutions.</p>
                                 </div>
                             </div>
-                            <div class="card border-0 rounded-4 slider-card bg-main p-32" style="width: 21rem;">
+                            <div class="card border-0 rounded-4 slider-card bg-grey p-32">
                                 <div class="mb-80 mb-sm-40 mb-lg-40 rounded-4">
                                   <img src="assets/images/bulb-icon.svg" alt="icon" height="56px"/>  
                                 </div>                       
-                                <div class="card-body p-0">
-                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold">Support</h5>
-                                  <p class="card-text">Our dedicated support team is always here to help you succeed with personalized assistance and expert advice.</p>
+                                <div class="card-body p-0 d-flex flex-column justify-content-end">
+                                  <h5 class="card-title text-sm-xl text-lg-2xl text-3xl fw-bold text-black">Support</h5>
+                                  <p class="card-text text-black">Our dedicated support team is always here to help you succeed with personalized assistance and expert advice.</p>
                                 </div>
                             </div>
                             
@@ -266,7 +290,7 @@
                 <div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -277,7 +301,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -288,7 +312,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -299,7 +323,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -310,7 +334,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -321,7 +345,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -332,7 +356,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -343,7 +367,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -354,7 +378,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -365,7 +389,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -376,7 +400,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -387,7 +411,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -398,7 +422,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -409,7 +433,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -420,7 +444,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                            <div class="card border-0">
+                            <div class="card border-0 h-100">
                                 <div class="mb-3 rounded-4">
                                     <img src="assets/images/card-top-image.webp" class="rounded-4 img-fluid" alt="service-img">
                                 </div>                       
@@ -554,5 +578,75 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
+    <script>
+        // Function to initialize a slider ABOUTTTTT
+        function initAboutSlider(sliderWrapperSelector, nextBtnSelector, prevBtnSelector, dotsContainerSelector) {
+        const sliderWrapper = document.querySelector(sliderWrapperSelector);
+        const nextBtn = document.querySelector(nextBtnSelector);
+        const prevBtn = document.querySelector(prevBtnSelector);
+        const dots = document.querySelectorAll(`${dotsContainerSelector} .about-dot`);
+        let activeIndex = 0;
+        const totalCards = sliderWrapper.children.length;
+  
+        // Function to update the active dot
+        function updateActiveDot(index) {
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+  
+        // Set the initial active dot
+        updateActiveDot(activeIndex);
+  
+        nextBtn.addEventListener('click', () => {
+            const firstCard = sliderWrapper.firstElementChild;
+            const sliderWidth = sliderWrapper.offsetWidth; // Get the width of the slider wrapper
+            const cardWidth = firstCard.offsetWidth; // Get the width of one card
+            const translatePercentage = (cardWidth / sliderWidth) * 100; // Calculate translateX based on card width
+  
+            sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
+            sliderWrapper.style.transform = `translateX(-${translatePercentage}%)`;
+  
+            sliderWrapper.addEventListener('transitionend', () => {
+                sliderWrapper.style.transition = 'none';
+                sliderWrapper.appendChild(firstCard); // Move first card to the end
+                sliderWrapper.style.transform = 'translateX(0)'; // Reset the position
+  
+                // Update the active dot
+                activeIndex = (activeIndex + 1) % totalCards;
+                updateActiveDot(activeIndex);
+            }, { once: true });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const lastCard = sliderWrapper.lastElementChild;
+            const sliderWidth = sliderWrapper.offsetWidth; // Get the width of the slider wrapper
+            const cardWidth = lastCard.offsetWidth; // Get the width of one card
+            const translatePercentage = (cardWidth / sliderWidth) * 100; // Calculate translateX based on card width
+
+            // Move the last card to the beginning instantly without animation
+            sliderWrapper.style.transition = 'none';
+            sliderWrapper.prepend(lastCard);
+
+            // Position the slider to the left before animating it back to 0
+            sliderWrapper.style.transform = `translateX(-${translatePercentage}%)`;
+
+            setTimeout(() => {
+                sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
+                sliderWrapper.style.transform = 'translateX(0)'; // Animate back to the original position
+            }, 0);
+
+            // Update the active dot and handle index wrap-around
+            activeIndex = (activeIndex - 1 + totalCards) % totalCards;
+            updateActiveDot(activeIndex);
+        });
+      }
+  
+      // Initialize the sliders
+    
+      // initSlider('#pricingSlider .slider-wrapper', '#nextBtnPricing', '.dots-container');
+      initAboutSlider('#aboutSlider .slider-wrapper', '#nextBtnAbout', '#prevBtnAbout', '.about-dots-container');
+  
+    </script>
 </body>
 </html>
