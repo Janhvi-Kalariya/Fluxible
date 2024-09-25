@@ -32,9 +32,15 @@ body{
 .text-grey{
   color: #999;
 }
+.text-grey-2{
+  color: #666666;
+}
 /* spacing */
 .mx-80{
   margin: 0px 80px 0px 80px;
+}
+.mt-80{
+  margin-top: 80px;
 }
 .mb-80{
   margin-bottom: 80px;
@@ -121,8 +127,8 @@ body{
   z-index: 50;
 }
 .slideUp {
-  -webkit-transform: translateY(-110px);
-          transform: translateY(-110px);
+  -webkit-transform: translateY(-120px);
+          transform: translateY(-120px);
   transition: transform .5s ease-out;
 }
 
@@ -296,12 +302,6 @@ body{
   width: 0;
 }
 
-.slider-next-btn-black:hover{
-  background-color: #65e2ca!important;
-  fill: black;
-  height: 56px;
-  width: 56px;
-}
 .footer-next-btn-white:hover{
   background-color: #65e2ca!important;
   fill: black;
@@ -438,11 +438,15 @@ body{
   gap: 30px;
   transition: transform 0.5s ease-in-out;
 }
-
+.about-slider-wrapper{
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease-in-out;
+}
 .slider-card {
-  min-width: calc(33.33% - 20px);
+  min-width: calc(25% - 22.5px);
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 24px;
 }
 
 .dots-container {
@@ -485,7 +489,7 @@ body{
 #servicesSlider .carousel-controls{
   position: absolute;
   right: -1.5rem;
-  bottom: 60%;
+  bottom: 50%;
 }
 
 /* Tablet Responsive */
@@ -537,9 +541,6 @@ body{
   .cta-div-p--left{
     padding: 78px 64px 56px 64px;
   }
-}
-
-@media (min-width: 600px) and (max-width: 768px) {
   .slider-wrapper {
     display: flex;
     gap: 30px;
@@ -549,7 +550,7 @@ body{
   .slider-card {
     min-width: calc(50% - 15px);
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 24px;
   }
 }
 
@@ -600,7 +601,7 @@ body{
   .slider-card {
     min-width: calc(100%);
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 24px;
   }
   .cta-div{
     margin-bottom: -6rem;

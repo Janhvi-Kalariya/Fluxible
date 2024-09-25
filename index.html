@@ -16,7 +16,7 @@
             <header class="header">
                 <nav class="navbar navbar-expand-lg p-32 p-sm-24">
                     <div class="container-fluid p-0">
-                      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="logo"/></a>
+                      <a class="navbar-brand p-0" href="index.html"><img src="assets/images/fluxible-logo.svg" alt="logo"/></a>
                       <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="">
                             <img src="assets/images/nav-icon-toggler.svg" alt="toggler-icon" class="nav-icon-toggler">
@@ -28,15 +28,15 @@
                           <li class="nav-item">
                             <a class="nav-link p-0 text-black font-1 nav-text header-hover-line" href="services.html">Our Services</a>
                           </li>
-                          <li class="nav-item">
+                          <!-- <li class="nav-item">
                             <a class="nav-link p-0 text-black font-1 nav-text header-hover-line" href="#">Success Stories</a>
-                          </li>
+                          </li> -->
                           <li class="nav-item">
                             <a class="nav-link p-0 text-black font-1 nav-text header-hover-line" href="about.html">About Us</a>
                           </li>
-                          <li class="nav-item">
+                          <!-- <li class="nav-item">
                             <a class="nav-link p-0 text-black font-1 nav-text header-hover-line" href="#">Blog</a>
-                          </li>
+                          </li> -->
                           <li class="nav-item">
                             <a class="nav-link p-0 text-black font-1 nav-text header-hover-line" href="pricing.html">Pricing</a>
                           </li>
@@ -542,8 +542,9 @@
             </div>
              
             <!-- Monthly Pricing Cards -->
-            <div id="monthly-cards" class="font-1 d-flex flex-column flex-lg-row gap-32">           
-                    <div class="card p-32 rounded-4 border-0 slider-card">
+            <div id="monthly-cards" class="font-1 row"> 
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card p-32 rounded-4 border-0 h-100">
                         <div class="card-body p-0 d-flex flex-column justify-content-between">
                             <div class="">                          
                                 <div class="d-flex align-items-center gap-3 mb-32">
@@ -579,7 +580,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card p-32 rounded-4 border-0 slider-card bg-black text-white">
+                </div>          
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card p-32 rounded-4 border-0 bg-black text-white h-100">
                         <div class="card-body p-0 d-flex flex-column justify-content-between">
                             <div class="">
                                 <div class="text-center mb-4">
@@ -622,7 +625,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card p-32 rounded-4 border-0 slider-card">
+                </div>    
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card p-32 rounded-4 border-0 h-100">
                         <div class="card-body p-0 d-flex flex-column justify-content-between">
                             <div class="">                          
                                 <div class="d-flex align-items-center gap-3 mb-32">
@@ -658,128 +663,132 @@
                             </div>
                         </div>
                     </div>
-                    
+                </div>    
             </div>
         
             <!-- Yearly Pricing Cards (hidden by default) -->
-            <div id="yearly-cards" class="font-1 d-flex flex-column flex-lg-row gap-32 hide">
-                           
-                <div class="card p-32 rounded-4 border-0 slider-card">
-                    <div class="card-body p-0 d-flex flex-column justify-content-between">
-                        <div class="">                          
-                            <div class="d-flex align-items-center gap-3 mb-32">
-                                <img src="assets/images/card-main-icon.svg" alt="icon"/>
-                                <h5 class="card-title fw-bold mb-0">Starter Plan</h5>
-                            </div> 
-                            <div class="mb-40">
-                                <h1 class="fw-bold mb-0">£499.99</h1>
-                                <p class="mb-1">Per user per year</p>
-                                <div class="d-flex align-items-center gap-1">
-                                    <img src="assets/images/coins-icon.svg" alt="coins-icon"/>
-                                    <p class="mb-0">600 coins</p>
-                                </div>
-                            </div>                       
-                            
-                            <ul class="list-unstyled mb-80">
-                                <li class="d-flex align-items-center gap-2 mb-2">
-                                    <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
-                                    <p class="mb-0">600 image designs or</p>
-                                </li>
-                                <li class="d-flex align-items-center gap-2 mb-2">
-                                    <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
-                                    <p class="mb-0">600 text generations or</p>
-                                </li>
-                                <li class="d-flex align-items-center gap-2 mb-2">
-                                    <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
-                                    <p class="mb-0">0 image adjustment requests</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="d-grid">
-                            <button class="btn btn-2 rounded-5 py-2 px-4 font-1 text-center">Get Started</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card p-32 rounded-4 border-0 slider-card bg-black text-white">
-                    <div class="card-body p-0 d-flex flex-column justify-content-between">
-                        <div class="">
-                            <div class="text-center mb-4">
-                                <span class="badge rounded-pill text-black bg-main p-2">RECOMMENDED</span>
+            <div id="yearly-cards" class="font-1 row hide">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card p-32 rounded-4 border-0 h-100">
+                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                            <div class="">                          
+                                <div class="d-flex align-items-center gap-3 mb-32">
+                                    <img src="assets/images/card-main-icon.svg" alt="icon"/>
+                                    <h5 class="card-title fw-bold mb-0">Starter Plan</h5>
+                                </div> 
+                                <div class="mb-40">
+                                    <h1 class="fw-bold mb-0">£499.99</h1>
+                                    <p class="mb-1">Per user per year</p>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <img src="assets/images/coins-icon.svg" alt="coins-icon"/>
+                                        <p class="mb-0">600 coins</p>
+                                    </div>
+                                </div>                       
+                                
+                                <ul class="list-unstyled mb-80">
+                                    <li class="d-flex align-items-center gap-2 mb-2">
+                                        <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
+                                        <p class="mb-0">600 image designs or</p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 mb-2">
+                                        <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
+                                        <p class="mb-0">600 text generations or</p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 mb-2">
+                                        <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
+                                        <p class="mb-0">0 image adjustment requests</p>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="d-flex align-items-center gap-3 mb-32">
-                                <img src="assets/images/card-main-icon-white.svg" alt="icon"/>
-                                <h5 class="card-title fw-bold mb-0">Pro Plan</h5>
-                            </div>                       
-                            <div class="mb-40">
-                                <h1 class="fw-bold mb-0">£799.99</h1>
-                                <p class="mb-1">Per user per year</p>
-                                <div class="d-flex align-items-center gap-1 mb-1">
-                                    <img src="assets/images/coins-icon.svg" alt="coins-icon"/>
-                                    <p class="mb-0">3600 coins</p>
-                                </div>
-                                <div class="d-flex align-items-center gap-1">
-                                    <img src="assets/images/discount-icon.svg" alt="coins-icon"/>
-                                    <p class="mb-0">£59.99 (Join now for £10 off)</p>
-                                </div>
-                            </div>                       
-                            
-                            <ul class="list-unstyled mb-80">
-                                <li class="d-flex align-items-center gap-2 mb-2">
-                                    <img src="assets/images/list-tick-icon-white.svg" alt="list-icon"/>
-                                    <p class="mb-0">3600 image designs or</p>
-                                </li>
-                                <li class="d-flex align-items-center gap-2 mb-2">
-                                    <img src="assets/images/list-tick-icon-white.svg" alt="list-icon"/>
-                                    <p class="mb-0">3600 text generations or</p>
-                                </li>
-                                <li class="d-flex align-items-center gap-2 mb-2">
-                                    <img src="assets/images/list-tick-icon-white.svg" alt="list-icon"/>
-                                    <p class="mb-0">24 image adjustment requests</p>
-                                </li>
-                            </ul>
+                            <div class="d-grid">
+                                <button class="btn btn-2 rounded-5 py-2 px-4 font-1 text-center">Get Started</button>
+                            </div>
                         </div>
-                        <div class="d-grid">
-                            <button class="btn btn-3 rounded-5 py-2 px-4 font-1 text-center">Get Started</button>
+                    </div>
+                </div>           
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card p-32 rounded-4 border-0 bg-black text-white h-100">
+                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                            <div class="">
+                                <div class="text-center mb-4">
+                                    <span class="badge rounded-pill text-black bg-main p-2">RECOMMENDED</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mb-32">
+                                    <img src="assets/images/card-main-icon-white.svg" alt="icon"/>
+                                    <h5 class="card-title fw-bold mb-0">Pro Plan</h5>
+                                </div>                       
+                                <div class="mb-40">
+                                    <h1 class="fw-bold mb-0">£799.99</h1>
+                                    <p class="mb-1">Per user per year</p>
+                                    <div class="d-flex align-items-center gap-1 mb-1">
+                                        <img src="assets/images/coins-icon.svg" alt="coins-icon"/>
+                                        <p class="mb-0">3600 coins</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <img src="assets/images/discount-icon.svg" alt="coins-icon"/>
+                                        <p class="mb-0">£59.99 (Join now for £10 off)</p>
+                                    </div>
+                                </div>                       
+                                
+                                <ul class="list-unstyled mb-80">
+                                    <li class="d-flex align-items-center gap-2 mb-2">
+                                        <img src="assets/images/list-tick-icon-white.svg" alt="list-icon"/>
+                                        <p class="mb-0">3600 image designs or</p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 mb-2">
+                                        <img src="assets/images/list-tick-icon-white.svg" alt="list-icon"/>
+                                        <p class="mb-0">3600 text generations or</p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 mb-2">
+                                        <img src="assets/images/list-tick-icon-white.svg" alt="list-icon"/>
+                                        <p class="mb-0">24 image adjustment requests</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-3 rounded-5 py-2 px-4 font-1 text-center">Get Started</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card p-32 rounded-4 border-0 slider-card">
-                    <div class="card-body p-0 d-flex flex-column justify-content-between">
-                        <div class="">                          
-                            <div class="d-flex align-items-center gap-3 mb-32">
-                                <img src="assets/images/card-main-icon.svg" alt="icon"/>
-                                <h5 class="card-title fw-bold mb-0">Elite Plan</h5>
-                            </div> 
-                            <div class="mb-40">
-                                <h1 class="fw-bold mb-0">£899.99</h1>
-                                <p class="mb-1">Per user per year</p>
-                                <div class="d-flex align-items-center gap-1">
-                                    <img src="assets/images/coins-icon.svg" alt="coins-icon"/>
-                                    <p class="mb-0">6000 coins</p>
-                                </div>
-                            </div>                       
-                            
-                            <ul class="list-unstyled mb-80">
-                                <li class="d-flex align-items-center gap-2 mb-2">
-                                    <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
-                                    <p class="mb-0">6000 image designs or</p>
-                                </li>
-                                <li class="d-flex align-items-center gap-2 mb-2">
-                                    <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
-                                    <p class="mb-0">6000 text generations or</p>
-                                </li>
-                                <li class="d-flex align-items-center gap-2 mb-2">
-                                    <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
-                                    <p class="mb-0">36 image adjustment requests</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="d-grid">
-                            <button class="btn btn-2 rounded-5 py-2 px-4 font-1 text-center">Get Started</button>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card p-32 rounded-4 border-0 h-100">
+                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                            <div class="">                          
+                                <div class="d-flex align-items-center gap-3 mb-32">
+                                    <img src="assets/images/card-main-icon.svg" alt="icon"/>
+                                    <h5 class="card-title fw-bold mb-0">Elite Plan</h5>
+                                </div> 
+                                <div class="mb-40">
+                                    <h1 class="fw-bold mb-0">£899.99</h1>
+                                    <p class="mb-1">Per user per year</p>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <img src="assets/images/coins-icon.svg" alt="coins-icon"/>
+                                        <p class="mb-0">6000 coins</p>
+                                    </div>
+                                </div>                       
+                                
+                                <ul class="list-unstyled mb-80">
+                                    <li class="d-flex align-items-center gap-2 mb-2">
+                                        <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
+                                        <p class="mb-0">6000 image designs or</p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 mb-2">
+                                        <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
+                                        <p class="mb-0">6000 text generations or</p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 mb-2">
+                                        <img src="assets/images/list-tick-icon.svg" alt="list-icon"/>
+                                        <p class="mb-0">36 image adjustment requests</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-2 rounded-5 py-2 px-4 font-1 text-center">Get Started</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                </div>               
             </div>
             
               
@@ -811,139 +820,139 @@
                 <div class="slider-container" id="servicesSlider">
                     <div class="slider-wrapper font-1">
                                
-                        <div class="card border-0 slider-card ">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>                       
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Brand Identity Development</h5>
-                              <p class="card-text">Instantly establish your brand's identity.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Brand Identity Development</h5>
+                              <p class="card-text text-grey-2">Instantly establish your brand's identity.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Marketing Strategy Consultation</h5>
-                              <p class="card-text">Expert advice to boost your marketing.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Marketing Strategy Consultation</h5>
+                              <p class="card-text text-grey-2">Expert advice to boost your marketing.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Email Marketing Campaigns</h5>
-                              <p class="card-text">Reach your audience effectively via email.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Email Marketing Campaigns</h5>
+                              <p class="card-text text-grey-2">Reach your audience effectively via email.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">SMS Marketing Campaigns</h5>
-                              <p class="card-text">Quick, impactful SMS marketing solutions.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">SMS Marketing Campaigns</h5>
+                              <p class="card-text text-grey-2">Quick, impactful SMS marketing solutions.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Custom Logo Design</h5>
-                              <p class="card-text">Get a unique logo designed for you.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Custom Logo Design</h5>
+                              <p class="card-text text-grey-2">Get a unique logo designed for you.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Facebook Business Page Setup</h5>
-                              <p class="card-text">Create a strong Facebook business presence.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Facebook Business Page Setup</h5>
+                              <p class="card-text text-grey-2">Create a strong Facebook business presence.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Facebook Ad Content Creation with Imagery</h5>
-                              <p class="card-text">Create compelling Facebook ads with visuals.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Facebook Ad Content Creation with Imagery</h5>
+                              <p class="card-text text-grey-2">Create compelling Facebook ads with visuals.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Google Keyword Planning for SEO</h5>
-                              <p class="card-text">Boost your SEO with targeted keywords.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Google Keyword Planning for SEO</h5>
+                              <p class="card-text text-grey-2">Boost your SEO with targeted keywords.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Google Ad Campaign Creation</h5>
-                              <p class="card-text">Set up effective Google ad campaigns.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Google Ad Campaign Creation</h5>
+                              <p class="card-text text-grey-2">Set up effective Google ad campaigns.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Comprehensive Campaign Reporting and Performance Tracking</h5>
-                              <p class="card-text">Monitor your marketing success.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Comprehensive Campaign Reporting and Performance Tracking</h5>
+                              <p class="card-text text-grey-2">Monitor your marketing success.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Responsive Website Design</h5>
-                              <p class="card-text">Build a website that works on any device.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Responsive Website Design</h5>
+                              <p class="card-text text-grey-2">Build a website that works on any device.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Custom Leaflet Design</h5>
-                              <p class="card-text">Design eye-catching leaflets for your business.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Custom Leaflet Design</h5>
+                              <p class="card-text text-grey-2">Design eye-catching leaflets for your business.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Creative Poster Design</h5>
-                              <p class="card-text">Get creative posters designed to attract attention.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Creative Poster Design</h5>
+                              <p class="card-text text-grey-2">Get creative posters designed to attract attention.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Professional Business Card Design</h5>
-                              <p class="card-text">Design business cards that make an impression.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Professional Business Card Design</h5>
+                              <p class="card-text text-grey-2">Design business cards that make an impression.</p>
                             </div>
                         </div>
-                        <div class="card border-0 slider-card">
-                            <div class="mb-3 scale-img-container rounded-4">
-                                <img src="assets/images/card-top-image.webp" class="card-img-top rounded-4 scale-img" alt="service-img">
+                        <div class="card border-0 slider-card bg-main p-4">
+                            <div class="mb-40 mt-80">
+                                <img src="assets/images/service1-icon.svg" class="" alt="service-img">
                             </div>  
-                            <div class="card-body p-0">
-                              <h5 class="card-title text-xl fw-bold">Daily Social Media Post Management</h5>
-                              <p class="card-text">Manage your social media with daily posts.</p>
+                            <div class="card-body p-0 d-flex flex-column justify-content-end">
+                              <h5 class="card-title text-xl fw-bold text-black">Daily Social Media Post Management</h5>
+                              <p class="card-text text-grey-2">Manage your social media with daily posts.</p>
                             </div>
                         </div>
                     </div>
@@ -1039,14 +1048,15 @@
                         <div class="col-12 col-lg-5">
                             <div class="d-flex justify-content-start justify-content-lg-around gap-5 gap-lg-0">                       
                                 <nav class="nav flex-column gap-2">
-                                    <a class="nav-link text-white p-0 footer-hover-line" href="#">Our Services</a>
-                                    <a class="nav-link text-white p-0 footer-hover-line" href="#">Success Stories</a>
-                                    <a class="nav-link text-white p-0 footer-hover-line" href="#">About Us</a>
-                                    <a class="nav-link text-white p-0 footer-hover-line" href="#">Blog</a>
+                                    <a class="nav-link text-white p-0 footer-hover-line" href="services.html">Our Services</a>
+                                    <!-- <a class="nav-link text-white p-0 footer-hover-line" href="#">Success Stories</a> -->
+                                    <a class="nav-link text-white p-0 footer-hover-line" href="about.html">About Us</a>
+                                    <a class="nav-link text-white p-0 footer-hover-line" href="pricing.html">Pricing</a>
+                                    <!-- <a class="nav-link text-white p-0 footer-hover-line" href="#">Blog</a> -->
                                 </nav>
                                 <nav class="nav flex-column gap-2">
-                                    <a class="nav-link text-white p-0 footer-hover-line" href="#">Pricing</a>
-                                    <a class="nav-link text-white p-0 footer-hover-line" href="#">Contact</a>
+                                    <!-- <a class="nav-link text-white p-0 footer-hover-line" href="#">Pricing</a> -->
+                                    <a class="nav-link text-white p-0 footer-hover-line" href="contact.html">Contact</a>
                                     <a class="nav-link text-white p-0 footer-hover-line" href="#">SignUp</a>
                                     <a class="nav-link text-white p-0 footer-hover-line" href="#">SignIn</a>
                                 </nav>
@@ -1055,8 +1065,8 @@
                         
                         <div class="col-12 col-lg-3">
                             
-                            <img src="assets/images/logo-white.svg" alt="logo" class="mb-3"/>
-                            <p class="mb-1 text-xs">Don't be a stranger</p>
+                            <img src="assets/images/fluxible-logo.svg" alt="logo" class="mb-3"/>
+                            <p class="mb-1 text-xs text-grey">Don't be a stranger</p>
                             <div class="d-flex align-items-center gap-2 mb-3">
                                 <img src="assets/images/footer-plane-icon.svg" alt="plane-icon"/>
                                 <a href="#" class="text-white mb-0 footer-hover-line">contact@gmail.com</a>

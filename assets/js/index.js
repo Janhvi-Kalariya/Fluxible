@@ -71,7 +71,72 @@ document.addEventListener('DOMContentLoaded', () => {
     monthlyToggle.classList.remove('active');
     });
 
+    // Function to initialize a slider ABOUTTTTT***********************************
     
+    // function initAboutSlider(sliderWrapperSelector, nextBtnSelector, prevBtnSelector, dotsContainerSelector) {
+    //     const sliderWrapper = document.querySelector(sliderWrapperSelector);
+    //     const nextBtn = document.querySelector(nextBtnSelector);
+    //     const prevBtn = document.querySelector(prevBtnSelector);
+    //     const dots = document.querySelectorAll(`${dotsContainerSelector} .about-dot`);
+    //     let activeIndex = 0;
+    //     const totalCards = sliderWrapper.children.length;
+  
+    //     // Function to update the active dot
+    //     function updateActiveDot(index) {
+    //         dots.forEach((dot, i) => {
+    //             dot.classList.toggle('active', i === index);
+    //         });
+    //     }
+  
+    //     // Set the initial active dot
+    //     updateActiveDot(activeIndex);
+  
+    //     nextBtn.addEventListener('click', () => {
+    //         const firstCard = sliderWrapper.firstElementChild;
+    //         const sliderWidth = sliderWrapper.offsetWidth; // Get the width of the slider wrapper
+    //         const cardWidth = firstCard.offsetWidth; // Get the width of one card
+    //         const translatePercentage = (cardWidth / sliderWidth) * 100; // Calculate translateX based on card width
+  
+    //         sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
+    //         sliderWrapper.style.transform = `translateX(-${translatePercentage}%)`;
+  
+    //         sliderWrapper.addEventListener('transitionend', () => {
+    //             sliderWrapper.style.transition = 'none';
+    //             sliderWrapper.appendChild(firstCard); // Move first card to the end
+    //             sliderWrapper.style.transform = 'translateX(0)'; // Reset the position
+  
+    //             // Update the active dot
+    //             activeIndex = (activeIndex + 1) % totalCards;
+    //             updateActiveDot(activeIndex);
+    //         }, { once: true });
+    //     });
+
+    //     prevBtn.addEventListener('click', () => {
+    //         const lastCard = sliderWrapper.lastElementChild;
+    //         const sliderWidth = sliderWrapper.offsetWidth; // Get the width of the slider wrapper
+    //         const cardWidth = lastCard.offsetWidth; // Get the width of one card
+    //         const translatePercentage = (cardWidth / sliderWidth) * 100; // Calculate translateX based on card width
+
+    //         // Move the last card to the beginning instantly without animation
+    //         sliderWrapper.style.transition = 'none';
+    //         sliderWrapper.prepend(lastCard);
+
+    //         // Position the slider to the left before animating it back to 0
+    //         sliderWrapper.style.transform = `translateX(-${translatePercentage}%)`;
+
+    //         setTimeout(() => {
+    //             sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
+    //             sliderWrapper.style.transform = 'translateX(0)'; // Animate back to the original position
+    //         }, 0);
+
+    //         // Update the active dot and handle index wrap-around
+    //         activeIndex = (activeIndex - 1 + totalCards) % totalCards;
+    //         updateActiveDot(activeIndex);
+    //     });
+    //   }
+  
+    //   // Initialize the sliders
+    //   initAboutSlider('#aboutSlider .about-slider-wrapper', '#nextBtnAbout', '#prevBtnAbout', '.about-dots-container');
 
     // Function to initialize a slider
     function initSlider(sliderWrapperSelector, nextBtnSelector, dotsContainerSelector) {
@@ -112,10 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Initialize the sliders
-  
     // initSlider('#pricingSlider .slider-wrapper', '#nextBtnPricing', '.dots-container');
     initSlider('#servicesSlider .slider-wrapper', '#nextBtnServices', '#servicesSlider .dots-container');
+
 });
 
 
