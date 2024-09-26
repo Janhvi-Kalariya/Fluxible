@@ -598,6 +598,9 @@ body{
   .mx-sm-24{
     margin: 0px 24px 0px 24px;
   }
+  .mx-sm-0{
+    margin: 0px 0px 0px 0px;
+  }
   .mb-sm-40{
     margin-bottom: 40px;
   }
