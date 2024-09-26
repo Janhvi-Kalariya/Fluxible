@@ -143,6 +143,8 @@ body{
   background-color: #65e2ca;
   font-size: 1.875rem;
   font-weight: 700;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 .collapse-toggle-style{
   padding-top: 70px;
@@ -238,6 +240,14 @@ body{
   top: 19%;
   left: 23px;
 }
+.hero-overlap{
+  margin-bottom: -7rem;
+  position: relative;
+  z-index: 10;
+}
+.pt-overlap{
+  padding-top: 130px;
+}
 /* Hover effects */
 
 .hover-prev-btn, 
@@ -288,6 +298,9 @@ body{
   fill: black;
   height: 54px;
   width: 54px;
+}
+.w-auto{
+  width: auto!important;
 }
 /* On hover */
 .hover-btn:hover .hover-prev-btn {
@@ -541,6 +554,14 @@ body{
   .cta-div-p--left{
     padding: 78px 64px 56px 64px;
   }
+  .hero-overlap{
+    margin-bottom: -7rem;
+    position: relative;
+    z-index: 10;
+  }
+  .pt-overlap{
+    padding-top: 130px;
+  }
   .slider-wrapper {
     display: flex;
     gap: 30px;
@@ -619,5 +640,16 @@ body{
     height: 100%;
     object-fit: cover; 
     object-position: center;
+  }
+  .hero-overlap{
+    margin-bottom: -7rem;
+    position: relative;
+    z-index: 10;
+  }
+  .pt-overlap{
+    padding-top: 130px;
+  }
+  .w-auto{
+    width: 100%!important;
   }
 }
